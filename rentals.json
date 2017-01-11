@@ -22,5 +22,10 @@
   "type": "Apartment",
   "bedrooms": 1,
   "image": "https://68.media.tumblr.com/39e89c0494fdb51006a79c621d401e4e/tumblr_nuc4miO31N1uygu1vo2_1280.jpg"
-  }]
+  }],
+
+  "announcements": [{
+      "title": "Open House",
+      "message": "Charlie's studio in Philly will be open for tours Jan. 11"
+    }]
 }
