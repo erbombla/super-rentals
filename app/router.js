@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('contact');
   this.route('announcement');
   this.route('admin');
+  this.route('rental', {path: '/rental/:rental_id'}); 
 });
 
 export default Router;
