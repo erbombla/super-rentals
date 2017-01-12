@@ -1,21 +1,23 @@
-<h1> Welcome to Ember Rentals </h1>
-<hr>
+<div class = "container">
+  <h1> Welcome to Ember Rentals </h1>
+  <hr>
 
-<em>These places are FIRE!</em>
+  <em>These places are FIRE!</em>
 
-<h2> Current Listings </h2>
+  <h2> Current Listings </h2>
 
-<ul>
-  {{#each model as |rental|}}
-    {{rental-tile rental=rental}}
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model as |rental|}}
+      {{rental-tile rental=rental}}
+    {{/each}}
+  </ul>
 
-{{new-rental saveRental2="saveRental3"}}
+  {{new-rental saveRental2="saveRental3"}}
 
-<br>
-{{#link-to 'about'}}About{{/link-to}}
-<br>
-{{#link-to 'contact'}}Contact{{/link-to}}
-<br>
-{{#link-to 'announcement'}}Announcements{{/link-to}}
+  <br>
+  {{#link-to 'about'}}About{{/link-to}}
+  <br>
+  {{#link-to 'contact'}}Contact{{/link-to}}
+  <br>
+  {{#link-to 'announcement'}}Announcements{{/link-to}}
+</div>

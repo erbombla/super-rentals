@@ -12,9 +12,9 @@
         {{input value=message class="form-control" id="message"}}
       </div>
 
-      <button {{action 'saveAnnouncement'}}>Save</button>
+      <btn btn-default {{action 'saveAnnouncement'}}>Save</btn>
     </form>
   </div>
 {{else}}
-  <button {{action 'announcementFormShow'}}>Add Announcement</button>
+  <btn btn-default {{action 'announcementFormShow'}}>Add Announcement</btn>
 {{/if}}
