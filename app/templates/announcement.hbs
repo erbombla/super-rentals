@@ -1,18 +1,12 @@
-<h1> Ember Rentals </h1>
+<h1> Announcements </h1>
 <hr>
-
-<h2> Announcements </h2>
 
 <p>Please check often for the latest announcements, upcoming sales and other exciting news</p>
 
-<ul>
   {{#each model as |announcement|}}
     {{announcement-tile announcement=announcement}}
   {{/each}}
-</ul>
 
-{{#link-to 'about'}}About{{/link-to}}
-<br>
-{{#link-to 'contact'}}Contact{{/link-to}}
+
 <br>
 {{#link-to 'index'}}Home{{/link-to}}

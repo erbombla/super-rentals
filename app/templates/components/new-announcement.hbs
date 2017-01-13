@@ -1,20 +1,24 @@
 {{#if addNewAnnouncement}}
-  <h2>New Announcement</h2>
-  <div>
+<div class="well">
+  <h4>New Announcement</h4>
     <form>
-      <div class="form-group">
-        <label for="title">Title</label>
-        {{input value=title class="form-control" id="title"}}
+      <div class="form-group row">
+        <label for="title" class="col-xs-2 col-form-label">Title</label>
+        <div class="col-xs-10">
+          {{input value=title class="form-control" id="title" class="form-control"}}
+        </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group row">
         <label for="message">Message</label>
-        {{input value=message class="form-control" id="message"}}
+        <div class ="col-xs-10">
+          {{input value=message class="form-control" id="message"}}
+        </div>
       </div>
 
-      <btn btn-default {{action 'saveAnnouncement'}}>Save</btn>
+      <button = "button" class="btn btn-success btn-xs" {{action 'saveAnnouncement'}}>Save</button>
     </form>
-  </div>
+</div>
 {{else}}
-  <btn btn-default {{action 'announcementFormShow'}}>Add Announcement</btn>
+  <button ="button" class="btn btn-success btn-xs" {{action 'announcementFormShow'}}>Add Announcement</button>
 {{/if}}

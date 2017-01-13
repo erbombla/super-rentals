@@ -1,35 +1,45 @@
 {{#if addNewRental}}
-  <h2>New Rental</h2>
-  <div>
+<div class="well">
+  <h2>Add Rental</h2>
     <form>
-      <div class="form-group">
-        <label for="owner">Owner</label>
-        {{input value=owner id="owner"}}
+      <div class="form-group row">
+        <label for="owner" class="col-xs-2 col-form-label">Owner</label>
+        <div class="col-xs-10">
+          {{input value=owner id="owner" class="form-control"}}
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="type">Type</label>
-        {{input value=type id="type"}}
+      <div class="form-group row">
+        <label for="type" class="col-xs-2 col-form-label">Type</label>
+        <div class="col-xs-10">
+        {{input value=type id="type" class="form-control"}}
       </div>
+    </div>
 
-      <div class="form-group">
-        <label for="city">City</label>
-        {{input value=city id="city"}}
+      <div class="form-group row">
+        <label for="city" class="col-xs-2 col-form-label">City</label>
+        <div class="col-xs-10">
+        {{input value=city id="city" class="form-control"}}
       </div>
+    </div>
 
-      <div class="form-group">
-        <label for="bedrooms">Number of Bedrooms</label>
-        {{input value=bedrooms id="bedrooms"}}
+      <div class="form-group row">
+        <label for="bedrooms" class="col-xs-2 col-form-label">Number of Bedrooms</label>
+        <div class="col-xs-10">
+        {{input value=bedrooms id="bedrooms" class="form-control"}}
       </div>
+    </div>
 
-      <div class="form-group">
-        <label for="image">Image URL</label>
-        {{input value=image id="image"}}
+      <div class="form-group row">
+        <label for="image" class="col-xs-2 col-form-label">Image URL</label>
+        <div class="col-xs-10">
+        {{input value=image id="image" class="form-control"}}
       </div>
+    </div>
 
-      <btn btn-default {{action 'saveRental1'}}>Save</btn>
+      <button type="button" class="btn btn-success btn-xs" {{action 'saveRental1'}}>Save</button>
     </form>
-  </div>
+</div>
 {{else}}
-  <btn btn-default {{action 'rentalFormShow'}}>Add Rental</btn>
+  <button type="button" class="btn btn-success btn-xs" {{action 'rentalFormShow'}}>Add Rental</button>
 {{/if}}
